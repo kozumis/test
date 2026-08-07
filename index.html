@@ -6,60 +6,181 @@
     <title>Charles' Website on the WWW</title>
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 10px;
+            font-size: 14px;
         }
+
+        /* Top header section matching the image source URL setup */
+        .top-header {
+            font-size: 12px;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+
+        /* Dark separator line */
+        .hr-line {
+            border: 0;
+            border-top: 1px solid #000000;
+            margin: 5px 0 15px 0;
+        }
+
+        /* Two-column layout grid */
+        .page-wrapper {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        /* Left side vintage navigational sidebar links */
+        .sidebar-menu {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+        .sidebar-menu a {
+            color: #0000cc;
+            text-decoration: underline;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        /* Right content panel with layered absolute background image position mapping */
+        .main-content {
+            position: relative;
+            min-height: 350px;
+        }
+
+        /* Centered background image using your custom local repository file */
+        .bobcat-artwork {
+            position: absolute;
+            top: 10px;
+            left: 45px;
+            width: 340px;
+            height: auto;
+            opacity: 0.22; /* Retains low contrast so text stays perfectly readable */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Content block text styles */
         h1 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 0 15px 0;
         }
-        ul {
-            list-style-type: square;
-        }
-        li {
-            margin-bottom: 10px;
+        p {
+            margin: 0 0 15px 0;
+            max-width: 620px;
+            line-height: 1.3;
         }
         a {
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
+            color: #0000cc;
             text-decoration: underline;
-            color: #003366;
         }
-        .note {
-            background-color: #fff9d7;
-            border-left: 4px solid #ffcc00;
-            padding: 15px;
-            margin-top: 30px;
-            font-style: italic;
+        a:visited {
+            color: #551a8b;
+        }
+
+        /* Lists layout structure configuration */
+        ul {
+            margin: 10px 0 20px 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Divider above the validation button cluster block zone */
+        .footer-hr {
+            border: 0;
+            border-top: 1px solid #555555;
+            margin: 30px 0 10px 0;
+            max-width: 650px;
+        }
+
+        /* Vintage Web Badge layout placement settings */
+        .validation-badges {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+        }
+        .any-browser-badge {
+            border: 2px outset #ffffff;
+            background-color: #dddddd;
+            padding: 1px 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.1;
+            width: 65px;
+            color: #000000;
+        }
+        .any-browser-badge span {
+            color: #ff0000;
         }
     </style>
 </head>
 <body>
 
-    <h1>My website on the World Wide Web</h1>
-    
-    <p>Hello my name is Charles, i like computers and stuff, ive been thinking of making this for a while so here it is!</p>
+    <!-- Top frame section mimicking the image meta header layout -->
+    <div class="top-header">
+        <span style="color: #0000cc; text-decoration: underline;"><u>(HOME PAGE)</u></span><br>
+        Current development &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.io">https://github.io</a><br>
+        Stable release &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright &copy; 2026 by Charles. Released under the Unlicense.
+    </div>
 
-    <h2>Links and cool stuff:</h2>
-    <ul>
-        <li><a href="https://google.com">Google</a></li>
-        <li><a href="https://lite.duckduckgo.com">DuckDuckGo</a> (for text-only browsers like how i use Lynx)</li>
-        <li><a href="https://duckduckgo.com">DuckDuckGo</a> (Standard)</li>
-        <li><a href="https://youtube.com">YouTube</a></li>
-        <li><a href="https://wikipedia.com">Wikipedia</a> (pretty much the modern library of Alexandria)</li>
-    </ul>
+    <hr class="hr-line">
 
-    <div class="note">
-        <strong>Notice:</strong> Dont forget to check out the page about <a href="https://wikipedia.org" target="_blank">Bobcats on Wikipedia</a>!
+    <!-- Primary body container layout mapping -->
+    <div class="page-wrapper">
+        
+        <!-- Left Side Links Panel -->
+        <div class="sidebar-menu">
+            <a href="#">(HOME PAGE)</a>
+            <a href="#">Current development</a>
+            <a href="#">Stable release</a>
+            <a href="#">Resources</a>
+        </div>
+
+        <!-- Right Side Core Content Area -->
+        <div class="main-content">
+            
+            <!-- Local repository image anchor source replacement path -->
+            <img class="bobcat-artwork" src="miaou.jpg" alt="Bobcat Portrait Backdrop">
+
+            <h1>My website on the World Wide Web</h1>
+            
+            <p>Hello my name is Charles, i like computers and stuff, ive been thinking of making this for a while so here it is!</p>
+
+            <p>Links and cool stuff:</p>
+            <ul>
+                <li>The main search engine <a href="https://google.com">Google</a>.</li>
+                <li><a href="https://duckduckgo.com">DuckDuckGo Lite</a> for text-only browsers like how i use Lynx.</li>
+                <li>Standard resolution <a href="https://duckduckgo.com">DuckDuckGo</a> homepage.</li>
+                <li>Video media feeds across <a href="https://youtube.com">YouTube</a>.</li>
+                <li>The global open encyclopedia project <a href="https://wikipedia.com">Wikipedia</a> (pretty much the modern library of Alexandria).</li>
+            </ul>
+
+            <p>Dont forget to check out the page about <a href="https://wikipedia.org" target="_blank">Bobcats on Wikipedia</a>!</p>
+
+            <hr class="footer-hr">
+
+            <!-- Retro layout browser action badge confirmation zone -->
+            <div class="validation-badges">
+                <div class="any-browser-badge">
+                    Viewable With<br>
+                    <span>Any Browser</span>
+                </div>
+                <span>Designed for <a href="#">valid HTML</a> standards parsing.</span>
+            </div>
+
+        </div>
     </div>
 
 </body>
